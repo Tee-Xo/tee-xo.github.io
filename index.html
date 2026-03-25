@@ -1,9 +1,229 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Your Name | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="script" href="script.js"></link>
+</head>
 <body>
-  <h1>Tee Thomas</h1>
-  <p>Welcome to my website!</p>
-  <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
-</body>
 
+  <!-- ===== NAVIGATION ===== -->
+  <nav>
+    <div class="nav-logo">Your Name ✿</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#details">Career & Education</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger" id="hamburger" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <!-- Floating petals -->
+    <div class="petal petal-1"></div>
+    <div class="petal petal-2"></div>
+    <div class="petal petal-3"></div>
+    <div class="petal petal-4"></div>
+    <div class="petal petal-5"></div>
+
+    <div class="hero-content">
+      <span class="hero-tag">✿ Welcome to my corner of the web</span>
+      <h1 class="hero-name">Hi, I'm <em> Tumi Thomas </em></h1>
+      <div class="floral-divider">— ✾ —</div>
+      <p class="hero-tagline">
+        Your short tagline goes here — something that captures who you are,<br>
+        what you do, and what makes you uniquely <em>you</em>.
+      </p>
+      <div class="btn-group">
+        <a href="#about" class="btn btn-primary">Get to Know Me</a>
+        <a href="#contact" class="btn btn-outline">Say Hello ✉</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about">
+    <div class="section-header reveal">
+      <span class="section-label">✾ Who I Am</span>
+      <h2 class="section-title">A Little <em>About Me</em></h2>
+    </div>
+
+    <div class="about-grid">
+      <div class="about-photo-wrap reveal">
+        <div class="about-photo">
+          <img src="your-photo.jpg" alt="Your Name">
+        
+        </div>
+      </div>
+      <div class="about-text reveal">
+        <h3>Nice to meet you! 🌸</h3>
+        <p>
+          I am a self taught software developer with a passion for creating beautiful, functional web applications.</p>
+        <p>Aside from coding, I enjoy poetry, music and cooking. I am a lover of all things creative and I believe that technology can be a way for artistic expression.</p>
+        <p>Feel free to reach out if you'd like to connect and see what I am about!</p>
+        <br>
+        <a href="#contact" class="btn btn-primary">Let's Connect ✿</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CAREER & EDUCATION TABS ===== -->
+  <section id="details">
+    <div class="section-header reveal">
+      <span class="section-label">✾ My Journey</span>
+      <h2 class="section-title">Career & <em>Education</em></h2>
+    </div>
+
+    <div class="tab-nav">
+      <button class="tab-btn active" data-tab="career">🌸 Career</button>
+      <button class="tab-btn" data-tab="education">📖 Education</button>
+    </div>
+
+    <!-- CAREER TAB -->
+    <div class="tab-panel active" id="tab-career">
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Apr 2024 – Jun 2025</div>
+          <div class="timeline-title">JLevel 2 Housing Officer</div>
+          <div class="timeline-subtitle">Notting Hill Genesis</div>
+          <p class="timeline-desc">
+            • Managed a portfolio of rented properties in the Royal Borough of Kensington and Chelsea, overseeing tenancy support maintenance coordination and general housing administration. <br> Used PowerBI, Workwise and NEC Northgate to review rent accounts and property data improving accuracy and response times to residents. <br>
+            • Increased tenant engagement by proactively identifying support needs leading to fewer missed appointments and more consistent communication. <br>
+            • Resolved tenancy issues by coordinating with repairs and finance teams which reduced case resolution times. <br>
+            • Helped reduce arrears escalation through early identification and targeted follow up actions. <br>
+          </p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Month Year – Month Year</div>
+          <div class="timeline-title">Previous Job Title</div>
+          <div class="timeline-subtitle">Previous Company · Full-time</div>
+          <p class="timeline-desc">
+            Another role description. Highlight key contributions, projects you led,
+            or skills you built. Duplicate this block for additional roles.
+          </p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Month Year – Month Year</div>
+          <div class="timeline-title">Earlier Role</div>
+          <div class="timeline-subtitle">Company Name · Internship</div>
+          <p class="timeline-desc">
+            Even internships and early roles matter! Describe what you learned and
+            the impact you made.
+          </p>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- EDUCATION TAB -->
+    <div class="tab-panel" id="tab-education">
+      <div class="timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Year – Year</div>
+          <div class="timeline-title">Degree / Qualification Name</div>
+          <div class="timeline-subtitle">University / School Name · Your Major</div>
+          <p class="timeline-desc">
+            Describe highlights of your studies — favourite modules, dissertation
+            topic, societies you joined, or any awards or honours you received.
+          </p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Year – Year</div>
+          <div class="timeline-title">A-Levels / Secondary School / Other</div>
+          <div class="timeline-subtitle">School Name</div>
+          <p class="timeline-desc">
+            List subjects studied, grades (if comfortable sharing), or notable
+            achievements during this time.
+          </p>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-date">Year</div>
+          <div class="timeline-title">Certification or Online Course</div>
+          <div class="timeline-subtitle">Platform Name (e.g. Coursera, Udemy)</div>
+          <p class="timeline-desc">
+            Don't forget certifications, bootcamps, or online courses! These show
+            initiative and continuous learning.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <span class="section-label">✾ What I Know</span>
+      <h2 class="section-title">My <em>Skills</em></h2>
+    </div>
+
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌸</div>
+        <div class="skill-name">Skill One</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌿</div>
+        <div class="skill-name">Skill Two</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌷</div>
+        <div class="skill-name">Skill Three</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">✨</div>
+        <div class="skill-name">Skill Four</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🌼</div>
+        <div class="skill-name">Skill Five</div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="skill-icon">🦋</div>
+        <div class="skill-name">Skill Six</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact">
+    <div class="section-header reveal">
+      <span class="section-label">✾ Get in Touch</span>
+      <h2 class="section-title">Let's <em>Connect</em></h2>
+    </div>
+    <p class="contact-desc reveal">
+      I'd love to hear from you — whether it's a collaboration, an opportunity,
+      or just a friendly hello. My inbox is always open! 🌸
+    </p>
+    <div class="reveal">
+      <a href="mailto:youremail@example.com" class="btn btn-primary">✉ Send Me an Email</a>
+    </div>
+    <div class="social-links reveal">
+      <a href="https://github.com/yourusername" target="_blank" class="social-link">🐙 GitHub</a>
+      <a href="https://linkedin.com/in/yourusername" target="_blank" class="social-link">💼 LinkedIn</a>
+      <a href="https://twitter.com/yourusername" target="_blank" class="social-link">🐦 Twitter</a>
+      <!-- Add or remove social links as needed -->
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="floral-divider">✿ ✾ ✿</div>
+    <p style="margin-top:0.8rem;">Made with 💕 by Your Name · © <span id="year"></span></p>
+  </footer>
+</body>
 </html>
