@@ -1,0 +1,22 @@
+:root {
+      --blush:     #f5d6d6;
+      --lavender:  #dfd4f0;
+      --mint:      #d2ece6;
+      --butter:    #f7eecc;
+      --peach:     #f7ddc8;
+      --rose:      #c9748f;
+      --lilac:     #9b7fc7;
+      --sage:      #6aab99;
+      --text-dark: #3a2e3e;
+      --text-mid:  #6b5b72;
+      --text-light:#a390aa;
+      --white:     #fefcff;
+    }
+
+     body {
+      font-family: 'DM Sans', sans-serif;
+      background-color: var(--white);
+      color: var(--text-dark);
+      overflow-x: hidden;
+    }
+ 
